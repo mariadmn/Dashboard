@@ -1,10 +1,17 @@
 import React from "react";
-import {Container} from './styles';
+import {Container, Profile, Welcome, AppName} from './styles';
+import Toggle from "../toggle/toggle";
 
 const MainHeader: React.FC = () => {
     return (
         <Container>
-            <h1>MainHeader</h1>
+            <AppName>
+                <h1>Dashboard</h1>
+                <Toggle/>
+            </AppName>
+            <Profile>
+                <Welcome>Olá</Welcome>
+            </Profile>
         </Container>
     );
 }
